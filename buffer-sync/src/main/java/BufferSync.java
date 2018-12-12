@@ -2,7 +2,7 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class BufferExemplo implements Buffer {
+public class BufferSync implements Buffer {
 
     private Lock lockDeAcesso = new ReentrantLock();
     private Condition podeGravar = lockDeAcesso.newCondition();

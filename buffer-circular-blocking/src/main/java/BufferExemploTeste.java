@@ -5,7 +5,7 @@ public class BufferExemploTeste {
     public static void main(String[] args) {
         ExecutorService executor = Executors.newFixedThreadPool(2);
 
-        BufferSync localizacaoCompartilhada = new BufferSync();
+        BufferBlocking localizacaoCompartilhada = new BufferBlocking();
 
         try{
             executor.execute(new Produtor(localizacaoCompartilhada));

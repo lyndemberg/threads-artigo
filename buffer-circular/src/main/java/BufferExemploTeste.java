@@ -5,7 +5,7 @@ public class BufferExemploTeste {
     public static void main(String[] args) {
         ExecutorService executor = Executors.newFixedThreadPool(2);
 
-        BufferExemplo localizacaoCompartilhada = new BufferExemplo();
+        BufferCircular localizacaoCompartilhada = new BufferCircular();
 
         try{
             executor.execute(new Produtor(localizacaoCompartilhada));
